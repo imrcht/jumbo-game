@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #game-section {
+    margin-top: 20px;
+  }
+  
+  #question-container {
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  #result-container {
+    font-size: 18px;
+    color: green;
+  }
