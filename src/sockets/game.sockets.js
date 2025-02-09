@@ -61,13 +61,13 @@ const initSockets = (server) => {
           return;
         }
 
-        logger.info(`[${playerId}] question received: ${question.text}`);
-
         if (question) {
           // Send the next question to the player
+          logger.info(`[${playerId}] question received: ${question.text}`);
           io.to(playerId).emit('question:send', question);
         } else {
           // No more questions, end the game
+          logger.info(`[${playerId}] no more questions`);
           io.to(playerId).emit('game:end', { message: 'No more questions' });
         }
       } catch (err) {
