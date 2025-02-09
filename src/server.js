@@ -18,10 +18,7 @@ const v1Routes = require('./routes/v1');
 app.use('/v1', v1Routes);
 
 app.get('/', (_, res) => {
-  // send ../quizgame-frontend/index.html in response
-
-  res.sendFile('index.html', { root: '../jumbo-game/quizgame-frontend' });
-  // res.status(200).send('Jumbo backend task up and running');
+  res.status(200).send('Jumbo backend task up and running');
 });
 
 // Database connection
