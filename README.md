@@ -5,29 +5,36 @@ A real-time quiz game where two players compete against each other by answering 
 ## Features
 
 ### User Authentication:
+
 - Register and log in using **JWT** for secure authentication.
 - Passwords are securely hashed before storing in the database.
 
 ### Game Session Setup:
+
 - Start a new game session and match two players.
 - Notify both players when the game starts using **WebSockets**.
 
 ### Real-Time Question Delivery:
+
 - Players receive questions one at a time in real-time.
 - Questions are fetched from a pre-stored set in the database.
 
 ### Answer Submission and Scoring:
+
 - Players submit their answers via **WebSocket**.
 - Answers are validated, and scores are updated in real-time.
 
 ### Result Calculation:
+
 - After both players answer all questions, the final scores are calculated.
 - The winner is determined, and results are sent to both players.
 
 ### Database Storage:
+
 - Game session results are stored in **MongoDB** for future reference.
 
 ## Technologies Used
+
 - **Backend:** Node.js
 - **Database:** MongoDB
 - **Real-Time Communication:** WebSockets (Socket.IO)
@@ -39,6 +46,7 @@ A real-time quiz game where two players compete against each other by answering 
 ## Installation
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - MongoDB (running locally or remotely)
 - Git
@@ -50,8 +58,7 @@ A real-time quiz game where two players compete against each other by answering 
 ### Clone the Repository:
 
 ```bash
-git clone https://github.com/your-username/real-time-quiz-game.git
-cd real-time-quiz-game
+git clone https://github.com/imrcht/jumbo-game.git
 ```
 
 ### Install Dependencies:
@@ -61,6 +68,7 @@ npm install
 ```
 
 ### Set Up Environment Variables:
+
 Create a `.env` file in the root directory and add the following:
 
 ```
@@ -109,8 +117,7 @@ npm start
 
 ```json
 {
-  "player1Id": "player1_id",
-  "player2Id": "player2_id"
+  "playerId": "player_id"
 }
 ```
 
